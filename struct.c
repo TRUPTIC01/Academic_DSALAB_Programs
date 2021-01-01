@@ -9,7 +9,7 @@ typedef struct  {
 
 int main() { 
 
-	 struct student s;
+	 student s;
 
 	printf("Enter Student information\n");
 	printf("Enter name\n");
