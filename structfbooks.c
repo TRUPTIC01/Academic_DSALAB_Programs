@@ -9,6 +9,8 @@ struct books
 	int book_id;
 } ;
 
+void printbook (struct books book);
+
 int main()
 { 
 	struct books book1,book2;
@@ -26,17 +28,17 @@ int main()
        book2.book_id= 47000544;
 
        printf("Book Details\n\n");
-       printf("Book1 title = %s\n",book1.title);
-       printf("Book1 author = %s\n",book1.author);
-       printf("Book1 subject = %s\n",book1.subject);
-       printf("Book1 id = %d\n\n",book1.book_id);
+       printbook(book1);
 
-       printf("Book2 title = %s\n",book2.title);
-       printf("Book2 author = %s\n",book2.author);
-       printf("Book2 subject = %s\n",book2.subject);
-       printf("Book2 id = %d\n\n",book2.book_id);
+       printbook(book2);
 
        return 0;
 }
 
+void printbook (struct books book)  { 
+       printf("Book title = %s\n",book.title);
+       printf("Book author = %s\n",book.author);
+       printf("Book subject = %s\n",book.subject);
+       printf("Book id = %d\n\n",book.book_id);
+}
  
