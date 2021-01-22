@@ -76,8 +76,7 @@ void infix_prefix(char infix[], char prefix[])
 
 	while(F(s[top])> G(symbol))
 	{ 
-		prefix[j] = s[top--];
-		j++;
+		prefix[j++] = s[top--];
 	}
 
 	if (F(s[top])!=G(symbol))
